@@ -1,0 +1,7 @@
+# Unknown addresses are answered by 404.php, which sends the site's 404 page with a 404 status.
+DirectoryIndex index.html
+RewriteEngine On
+RewriteRule ^404\.html$ /404.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /404.php [L]

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1188 840" width="1188" height="840" role="img" aria-label="Shahar Moyal Cosmetics course certificate"><title>Course certificate</title>
+<rect width="1188" height="840" fill="#fbfaf7"/>
+<rect x="36" y="36" width="1116" height="768" fill="none" stroke="#16181d" stroke-width="2"/>
+<rect x="50" y="50" width="1088" height="740" fill="none" stroke="#16181d" stroke-width=".8"/>
+<g font-family="Georgia, 'Times New Roman', serif" fill="#16181d" text-anchor="middle">
+<text x="594" y="150" font-size="20" letter-spacing="10">SHAHAR MOYAL COSMETICS</text>
+<text x="594" y="262" font-size="76" letter-spacing="6">Certificate</text>
+<text x="594" y="312" font-size="20" letter-spacing="8">OF COMPLETION</text>
+<text x="594" y="380" font-size="17" letter-spacing="4">THIS IS TO CERTIFY THAT</text>
+<text x="594" y="548" font-size="17" letter-spacing="4">HAS COMPLETED THE COURSE WITH SHAHAR MOYAL</text>
+<text x="330" y="722" font-size="14" letter-spacing="4">SIGNATURE</text>
+<text x="858" y="722" font-size="14" letter-spacing="4">DATE</text>
+</g>
+<g stroke="#16181d" stroke-width="1.2"><line x1="324" y1="486" x2="864" y2="486"/><line x1="220" y1="694" x2="440" y2="694"/><line x1="748" y1="694" x2="968" y2="694"/></g>
+<g fill="none" stroke="#16181d" stroke-width="1.2"><circle cx="594" cy="668" r="34"/><circle cx="594" cy="668" r="28"/></g>
+<text x="594" y="676" font-family="Georgia, serif" font-size="22" text-anchor="middle" fill="#16181d">S/M</text>
+</svg>

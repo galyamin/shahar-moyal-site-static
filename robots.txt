@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shahar-moyal.1wp.site/sitemap.xml
