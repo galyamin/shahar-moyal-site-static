@@ -59,7 +59,7 @@
   }
 
   /* open now, and today's row */
-  const HOURS = { 0: [660, 1200], 1: [480, 1140], 2: [610, 1140], 3: [660, 1200], 4: [610, 1140] };
+  const HOURS = { 0: [660, 1140], 1: [600, 1080], 2: [600, 1170], 3: [600, 1080], 4: [600, 1080] };
   const fmt = (m) => `${String(Math.floor(m / 60)).padStart(2, "0")}:${String(m % 60).padStart(2, "0")}`;
   const now = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Jerusalem" }));
   const day = now.getDay(), mins = now.getHours() * 60 + now.getMinutes(), h = HOURS[day];
