@@ -509,8 +509,8 @@ p { text-wrap: pretty; }
 .spec dt { font-size: .875rem; }
 .spec dd { font: 500 1.5rem/1.1 var(--f-display); color: var(--ink); }
 .ticks { list-style: none; padding: 0; display: grid; gap: 8px; }
-.ticks li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; }
-.ticks li::before { content: ""; width: 9px; height: 5px; margin-top: .6em; border-inline-start: 1.8px solid var(--lacquer); border-bottom: 1.8px solid var(--lacquer); transform: rotate(-45deg); }
+.ticks li { position: relative; padding-inline-start: 30px; }
+.ticks li::before { content: ""; position: absolute; inset-inline-start: 4px; top: 0; width: 9px; height: 5px; margin-top: .6em; border-inline-start: 1.8px solid var(--lacquer); border-bottom: 1.8px solid var(--lacquer); transform: rotate(-45deg); }
 .dark .ticks li::before { border-color: var(--on-dark-2); }
 .syl { border-top: 1px solid var(--line); }
 .syl > summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0 0; font-weight: 500; color: var(--ink); }
@@ -888,7 +888,8 @@ body { font: 400 1.125rem/1.7 var(--f-text); }
 @media (min-width: 960px) {
   .wa-float { background: #1ba34e; border-color: #1ba34e; color: #fff; }
   .wa-float:hover { background: #178f45; border-color: #178f45; color: #fff; }
-  .wa-float .ico { stroke-width: 1.8; }
+  .wa-float { box-shadow: 0 6px 18px rgba(27, 163, 78, .32); }
+  .wa-float .ico { width: 30px; height: 30px; stroke-width: 1.7; }
 }
 
 /* phone: testimonials slide sideways instead of stacking, and the hero buttons run the full width (Gal, 23/11) */
@@ -977,7 +978,8 @@ body { font: 400 1.125rem/1.7 var(--f-text); }
 .consent[hidden] { display: none; }
 .consent__t { grid-column: 1 / -1; font-weight: 600; font-size: 1rem; margin: 0; }
 .consent__p { margin: 0; font-size: .9375rem; line-height: 1.55; color: rgba(255, 255, 255, .86); }
-.consent .link { color: #fff; }
+.consent .link { color: #fff; font-weight: 600; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+.consent .link:hover { text-decoration-thickness: 2.5px; }
 .consent__ok { background: #fff; color: var(--ink); border-color: #fff; min-height: 44px; align-self: end; }
 .consent__ok:hover, .consent__ok:focus-visible { background: var(--porcelain); color: var(--ink); }
 .consent__ok:focus-visible, .consent .link:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
