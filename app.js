@@ -8,6 +8,18 @@
   const store = { get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
   window.smReady = true;
 
+  /* privacy notice: shown until she confirms once; the only thing the site keeps in the browser */
+  const consent = $("[data-consent]");
+  if (consent && !store.get("sm-consent", null)) {
+    consent.hidden = false;
+    document.documentElement.classList.add("has-consent");
+    $("[data-consent-ok]", consent).addEventListener("click", () => {
+      store.set("sm-consent", { ok: 1, at: new Date().toISOString().slice(0, 10) });
+      consent.hidden = true;
+      document.documentElement.classList.remove("has-consent");
+    });
+  }
+
   /* header: clear over a full-screen hero, solid white once the page moves */
   const barEl = $("[data-bar]");
   /* it also steps out of the way on the way down and comes straight back on the way up */

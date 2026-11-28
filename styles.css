@@ -970,3 +970,15 @@ body { font: 400 1.125rem/1.7 var(--f-text); }
 .was { margin-inline-start: 10px; font-size: .7em; font-weight: 400; color: var(--ink-2); text-decoration: line-through; text-decoration-thickness: 1px; white-space: nowrap; }
 .ncard .was { color: var(--on-dark-2); }
 .dark .pickcard .was, .ncard .price .was { color: var(--on-dark-2); }
+
+/* privacy notice */
+.consent { position: fixed; z-index: 120; inset: auto 0 calc(62px + env(safe-area-inset-bottom)) 0; background: var(--ink); color: #fff; padding: 16px var(--gutter, 16px) 18px; display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; box-shadow: 0 -8px 28px rgba(28, 26, 25, .22); }
+.consent { border: 1px solid rgba(255, 255, 255, .18); }
+.consent[hidden] { display: none; }
+.consent__t { grid-column: 1 / -1; font-weight: 600; font-size: 1rem; margin: 0; }
+.consent__p { margin: 0; font-size: .9375rem; line-height: 1.55; color: rgba(255, 255, 255, .86); }
+.consent .link { color: #fff; }
+.consent__ok { background: #fff; color: var(--ink); border-color: #fff; min-height: 44px; align-self: end; }
+.consent__ok:hover, .consent__ok:focus-visible { background: var(--porcelain); color: var(--ink); }
+.consent__ok:focus-visible, .consent .link:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+@media (min-width: 960px) { .consent { inset: auto auto 24px 24px; max-width: 440px; padding: 20px 22px; box-shadow: 0 12px 36px rgba(28, 26, 25, .32); } }
